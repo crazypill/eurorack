@@ -37,7 +37,7 @@ int main(void)
     gpio.GPIO_Pin = BLUE_LED_PIN;
     GPIO_Init(GPIOD, &gpio);
 
-    int bitmap[4] = {1,1,1,0};
+    int bitmap[4] = {1,0,1,1};
 
     while(1)
     {

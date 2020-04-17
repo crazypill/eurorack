@@ -193,6 +193,12 @@
       location = "group:makefile">
    </FileRef>
    <FileRef
+      location = "group:jlink_script">
+   </FileRef>
+   <FileRef
+      location = "group:../stmlib/makefile.inc">
+   </FileRef>
+   <FileRef
       location = "group:meter.h">
    </FileRef>
    <Group

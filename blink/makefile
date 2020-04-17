@@ -58,3 +58,7 @@ wav:  $(TARGET_BIN)
 	python stm_audio_bootloader/qpsk/encoder.py \
 		-t stm32f4 -s 48000 -b 12000 -c 6000 -p 256 \
 		$(TARGET_BIN)
+
+upload_jlink: $(TARGET_HEX)
+	/usr/local/bin/JLinkExe blink/jlink_script
+
