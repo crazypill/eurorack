@@ -98,7 +98,7 @@ void TestDSP() {
   
   size_t block_counter = 0;
   float phase_ = 0.0f;
-  bool synthetic = true;
+    bool synthetic = false;//true;
   processor.Prepare();
   float pot_noise = 0.0f;
   while (remaining_samples) {
@@ -226,5 +226,5 @@ void TestGrainSize() {
 int main(void) {
   _MM_SET_FLUSH_ZERO_MODE(_MM_FLUSH_ZERO_ON);
   TestDSP();
-  // TestGrainSize();
+//  TestGrainSize();
 }

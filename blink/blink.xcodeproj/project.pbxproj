@@ -150,7 +150,6 @@
 		FA7458A6244CD88200FBF58E /* clouds_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clouds_test.cc; sourceTree = "<group>"; };
 		FA7458A7244CD88200FBF58E /* cv_scaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cv_scaler.h; sourceTree = "<group>"; };
 		FA7458D1244CE17E00FBF58E /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA7458D3244CE17E00FBF58E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FA7458E0244CE50C00FBF58E /* atan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atan.h; path = ../../stmlib/dsp/atan.h; sourceTree = "<group>"; };
 		FA7458E1244CE50C00FBF58E /* atan.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = atan.cc; path = ../../stmlib/dsp/atan.cc; sourceTree = "<group>"; };
 		FA7458E3244CE57300FBF58E /* random.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random.cc; path = ../../stmlib/utils/random.cc; sourceTree = "<group>"; };
@@ -197,7 +196,6 @@
 				FA7458A4244CD88200FBF58E /* test */,
 				FA74585A244CD86400FBF58E /* xcode */,
 				FA7458D1244CE17E00FBF58E /* test */,
-				FA7458D2244CE17E00FBF58E /* test */,
 			);
 			sourceTree = "<group>";
 		};
@@ -343,14 +341,6 @@
 			name = make;
 			sourceTree = "<group>";
 		};
-		FA7458D2244CE17E00FBF58E /* test */ = {
-			isa = PBXGroup;
-			children = (
-				FA7458D3244CE17E00FBF58E /* main.c */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
@@ -397,6 +387,20 @@
 			name = "blink upload";
 			passBuildSettingsInEnvironment = 1;
 			productName = "blink upload";
+		};
+		FA7458E7244CF2D100FBF58E /* blink clean */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f blink/makefile clean";
+			buildConfigurationList = FA7458E8244CF2D100FBF58E /* Build configuration list for PBXLegacyTarget "blink clean" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/alex/folabs/folabs-dev-environment/eurorack-modules/";
+			dependencies = (
+			);
+			name = "blink clean";
+			passBuildSettingsInEnvironment = 1;
+			productName = "blink clean";
 		};
 /* End PBXLegacyTarget section */
 
@@ -458,6 +462,9 @@
 					FA7458D0244CE17E00FBF58E = {
 						CreatedOnToolsVersion = 11.4;
 					};
+					FA7458E7244CF2D100FBF58E = {
+						CreatedOnToolsVersion = 11.4;
+					};
 				};
 			};
 			buildConfigurationList = FA2413DE244138FB00D84FCD /* Build configuration list for PBXProject "blink" */;
@@ -476,6 +483,7 @@
 				FA74584A244CD71A00FBF58E /* blink */,
 				FA7458BF244CD95B00FBF58E /* blink bootloader */,
 				FA7458C3244CD98900FBF58E /* blink upload */,
+				FA7458E7244CF2D100FBF58E /* blink clean */,
 				FA745851244CD7D100FBF58E /* xcode */,
 				FA7458D0244CE17E00FBF58E /* test */,
 			);
@@ -966,6 +974,74 @@
 			};
 			name = Release;
 		};
+		FA7458E9244CF2D100FBF58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA7458EA244CF2D100FBF58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1019,6 +1095,15 @@
 			buildConfigurations = (
 				FA7458D6244CE17E00FBF58E /* Debug */,
 				FA7458D7244CE17E00FBF58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7458E8244CF2D100FBF58E /* Build configuration list for PBXLegacyTarget "blink clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7458E9244CF2D100FBF58E /* Debug */,
+				FA7458EA244CF2D100FBF58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

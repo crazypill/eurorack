@@ -7,32 +7,44 @@
 		<key>blink bootloader.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+		<key>blink clean.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>blink upload.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<key>blink.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<key>test.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
 		</dict>
 		<key>xcode.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>FA2413DF244138FB00D84FCD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA745851244CD7D100FBF58E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +55,16 @@
 			<true/>
 		</dict>
 		<key>FA7458C3244CD98900FBF58E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA7458D0244CE17E00FBF58E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA7458E7244CF2D100FBF58E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
