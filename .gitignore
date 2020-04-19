@@ -36,6 +36,7 @@
 
 # OS X crap
 .DS_Stor?
+xcuserdata
 
 # Build directory
 build
