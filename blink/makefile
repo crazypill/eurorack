@@ -61,4 +61,7 @@ wav:  $(TARGET_BIN)
 
 upload_jlink: $(TARGET_HEX)
 	/usr/local/bin/JLinkExe blink/jlink_script
+	
+build: $(BUILD_DIR) $(TARGET_HEX)
+
 

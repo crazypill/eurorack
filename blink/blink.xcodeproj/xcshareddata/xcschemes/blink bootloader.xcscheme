@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA2413DF244138FB00D84FCD"
-               BuildableName = "test"
-               BlueprintName = "test"
-               ReferencedContainer = "container:test.xcodeproj">
+               BlueprintIdentifier = "FA7458BF244CD95B00FBF58E"
+               BuildableName = "blink bootloader"
+               BlueprintName = "blink bootloader"
+               ReferencedContainer = "container:blink.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,10 +50,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA2413DF244138FB00D84FCD"
-            BuildableName = "test"
-            BlueprintName = "test"
-            ReferencedContainer = "container:test.xcodeproj">
+            BlueprintIdentifier = "FA7458BF244CD95B00FBF58E"
+            BuildableName = "blink bootloader"
+            BlueprintName = "blink bootloader"
+            ReferencedContainer = "container:blink.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

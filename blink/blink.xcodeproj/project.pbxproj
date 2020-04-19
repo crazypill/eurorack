@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA7458A8244CD88200FBF58E /* stft.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74585D244CD88100FBF58E /* stft.cc */; };
+		FA7458A9244CD88200FBF58E /* phase_vocoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745861244CD88200FBF58E /* phase_vocoder.cc */; };
+		FA7458AA244CD88200FBF58E /* frame_transformation.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745862244CD88200FBF58E /* frame_transformation.cc */; };
+		FA7458AB244CD88200FBF58E /* granular_processor.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745863244CD88200FBF58E /* granular_processor.cc */; };
+		FA7458AC244CD88200FBF58E /* mu_law.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74586E244CD88200FBF58E /* mu_law.cc */; };
+		FA7458AD244CD88200FBF58E /* correlator.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745872244CD88200FBF58E /* correlator.cc */; };
+		FA7458AE244CD88200FBF58E /* blink.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74587C244CD88200FBF58E /* blink.cc */; };
+		FA7458AF244CD88200FBF58E /* codec.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745880244CD88200FBF58E /* codec.cc */; };
+		FA7458B0244CD88200FBF58E /* adc.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745882244CD88200FBF58E /* adc.cc */; };
+		FA7458B1244CD88200FBF58E /* leds.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745884244CD88200FBF58E /* leds.cc */; };
+		FA7458B2244CD88200FBF58E /* debug_port.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745888244CD88200FBF58E /* debug_port.cc */; };
+		FA7458B3244CD88200FBF58E /* switches.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74588B244CD88200FBF58E /* switches.cc */; };
+		FA7458B4244CD88200FBF58E /* system.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74588D244CD88200FBF58E /* system.cc */; };
+		FA7458B5244CD88200FBF58E /* gate_input.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74588E244CD88200FBF58E /* gate_input.cc */; };
+		FA7458B6244CD88200FBF58E /* ui.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745892244CD88200FBF58E /* ui.cc */; };
+		FA7458B7244CD88200FBF58E /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = FA745893244CD88200FBF58E /* makefile */; };
+		FA7458B8244CD88200FBF58E /* cv_scaler.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74589C244CD88200FBF58E /* cv_scaler.cc */; };
+		FA7458B9244CD88200FBF58E /* resources.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74589E244CD88200FBF58E /* resources.cc */; };
+		FA7458BA244CD88200FBF58E /* settings.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74589F244CD88200FBF58E /* settings.cc */; };
+		FA7458BB244CD88200FBF58E /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = FA7458A1244CD88200FBF58E /* makefile */; };
+		FA7458BC244CD88200FBF58E /* bootloader.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA7458A2244CD88200FBF58E /* bootloader.cc */; };
+		FA7458BD244CD88200FBF58E /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = FA7458A5244CD88200FBF58E /* makefile */; };
+		FA7458BE244CD88200FBF58E /* clouds_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA7458A6244CD88200FBF58E /* clouds_test.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA7458C7244CD9E700FBF58E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2413DB244138FB00D84FCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7458BF244CD95B00FBF58E;
+			remoteInfo = "blink bootloader";
+		};
+		FA7458C9244CDA0D00FBF58E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2413DB244138FB00D84FCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA74584A244CD71A00FBF58E;
+			remoteInfo = blink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA745850244CD7D100FBF58E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA74585A244CD86400FBF58E /* xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xcode; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA74585D244CD88100FBF58E /* stft.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stft.cc; sourceTree = "<group>"; };
+		FA74585E244CD88100FBF58E /* frame_transformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame_transformation.h; sourceTree = "<group>"; };
+		FA74585F244CD88200FBF58E /* phase_vocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phase_vocoder.h; sourceTree = "<group>"; };
+		FA745860244CD88200FBF58E /* stft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stft.h; sourceTree = "<group>"; };
+		FA745861244CD88200FBF58E /* phase_vocoder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phase_vocoder.cc; sourceTree = "<group>"; };
+		FA745862244CD88200FBF58E /* frame_transformation.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frame_transformation.cc; sourceTree = "<group>"; };
+		FA745863244CD88200FBF58E /* granular_processor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = granular_processor.cc; sourceTree = "<group>"; };
+		FA745865244CD88200FBF58E /* reverb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reverb.h; sourceTree = "<group>"; };
+		FA745866244CD88200FBF58E /* fx_engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fx_engine.h; sourceTree = "<group>"; };
+		FA745867244CD88200FBF58E /* pitch_shifter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pitch_shifter.h; sourceTree = "<group>"; };
+		FA745868244CD88200FBF58E /* diffuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diffuser.h; sourceTree = "<group>"; };
+		FA745869244CD88200FBF58E /* sample_rate_converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sample_rate_converter.h; sourceTree = "<group>"; };
+		FA74586A244CD88200FBF58E /* frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame.h; sourceTree = "<group>"; };
+		FA74586B244CD88200FBF58E /* wsola_sample_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wsola_sample_player.h; sourceTree = "<group>"; };
+		FA74586C244CD88200FBF58E /* window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
+		FA74586D244CD88200FBF58E /* parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parameters.h; sourceTree = "<group>"; };
+		FA74586E244CD88200FBF58E /* mu_law.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mu_law.cc; sourceTree = "<group>"; };
+		FA74586F244CD88200FBF58E /* audio_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_buffer.h; sourceTree = "<group>"; };
+		FA745870244CD88200FBF58E /* granular_sample_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = granular_sample_player.h; sourceTree = "<group>"; };
+		FA745871244CD88200FBF58E /* granular_processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = granular_processor.h; sourceTree = "<group>"; };
+		FA745872244CD88200FBF58E /* correlator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = correlator.cc; sourceTree = "<group>"; };
+		FA745873244CD88200FBF58E /* correlator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = correlator.h; sourceTree = "<group>"; };
+		FA745874244CD88200FBF58E /* mu_law.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mu_law.h; sourceTree = "<group>"; };
+		FA745875244CD88200FBF58E /* grain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grain.h; sourceTree = "<group>"; };
+		FA745876244CD88200FBF58E /* looping_sample_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = looping_sample_player.h; sourceTree = "<group>"; };
+		FA745878244CD88200FBF58E /* src_filters.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = src_filters.py; sourceTree = "<group>"; };
+		FA745879244CD88200FBF58E /* lookup_tables.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = lookup_tables.py; sourceTree = "<group>"; };
+		FA74587A244CD88200FBF58E /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		FA74587B244CD88200FBF58E /* resources.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = resources.py; sourceTree = "<group>"; };
+		FA74587C244CD88200FBF58E /* blink.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blink.cc; sourceTree = "<group>"; };
+		FA74587D244CD88200FBF58E /* resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resources.h; sourceTree = "<group>"; };
+		FA74587E244CD88200FBF58E /* settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settings.h; sourceTree = "<group>"; };
+		FA745880244CD88200FBF58E /* codec.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = codec.cc; sourceTree = "<group>"; };
+		FA745881244CD88200FBF58E /* debug_pin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug_pin.h; sourceTree = "<group>"; };
+		FA745882244CD88200FBF58E /* adc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adc.cc; sourceTree = "<group>"; };
+		FA745883244CD88200FBF58E /* adc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adc.h; sourceTree = "<group>"; };
+		FA745884244CD88200FBF58E /* leds.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = leds.cc; sourceTree = "<group>"; };
+		FA745885244CD88200FBF58E /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		FA745886244CD88200FBF58E /* gate_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gate_input.h; sourceTree = "<group>"; };
+		FA745887244CD88200FBF58E /* leds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leds.h; sourceTree = "<group>"; };
+		FA745888244CD88200FBF58E /* debug_port.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = debug_port.cc; sourceTree = "<group>"; };
+		FA745889244CD88200FBF58E /* codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec.h; sourceTree = "<group>"; };
+		FA74588A244CD88200FBF58E /* debug_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug_port.h; sourceTree = "<group>"; };
+		FA74588B244CD88200FBF58E /* switches.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = switches.cc; sourceTree = "<group>"; };
+		FA74588C244CD88200FBF58E /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		FA74588D244CD88200FBF58E /* system.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = system.cc; sourceTree = "<group>"; };
+		FA74588E244CD88200FBF58E /* gate_input.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gate_input.cc; sourceTree = "<group>"; };
+		FA74588F244CD88200FBF58E /* switches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = switches.h; sourceTree = "<group>"; };
+		FA745890244CD88200FBF58E /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		FA745891244CD88200FBF58E /* jlink_script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jlink_script; sourceTree = "<group>"; };
+		FA745892244CD88200FBF58E /* ui.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ui.cc; sourceTree = "<group>"; };
+		FA745893244CD88200FBF58E /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		FA745896244CD88200FBF58E /* clouds.dwg */ = {isa = PBXFileReference; lastKnownFileType = file; path = clouds.dwg; sourceTree = "<group>"; };
+		FA745897244CD88200FBF58E /* clouds.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clouds.ai; sourceTree = "<group>"; };
+		FA745898244CD88200FBF58E /* Clouds.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Clouds.xlsx; sourceTree = "<group>"; };
+		FA74589A244CD88200FBF58E /* clouds_v30.brd */ = {isa = PBXFileReference; lastKnownFileType = file; path = clouds_v30.brd; sourceTree = "<group>"; };
+		FA74589B244CD88200FBF58E /* clouds_v30.sch */ = {isa = PBXFileReference; lastKnownFileType = file; path = clouds_v30.sch; sourceTree = "<group>"; };
+		FA74589C244CD88200FBF58E /* cv_scaler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cv_scaler.cc; sourceTree = "<group>"; };
+		FA74589D244CD88200FBF58E /* meter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meter.h; sourceTree = "<group>"; };
+		FA74589E244CD88200FBF58E /* resources.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resources.cc; sourceTree = "<group>"; };
+		FA74589F244CD88200FBF58E /* settings.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = settings.cc; sourceTree = "<group>"; };
+		FA7458A1244CD88200FBF58E /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		FA7458A2244CD88200FBF58E /* bootloader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bootloader.cc; sourceTree = "<group>"; };
+		FA7458A3244CD88200FBF58E /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		FA7458A5244CD88200FBF58E /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		FA7458A6244CD88200FBF58E /* clouds_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clouds_test.cc; sourceTree = "<group>"; };
+		FA7458A7244CD88200FBF58E /* cv_scaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cv_scaler.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA74584F244CD7D100FBF58E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA2413DA244138FB00D84FCD = {
+			isa = PBXGroup;
+			children = (
+				FA74587C244CD88200FBF58E /* blink.cc */,
+				FA7458A0244CD88200FBF58E /* bootloader */,
+				FA74589C244CD88200FBF58E /* cv_scaler.cc */,
+				FA7458A7244CD88200FBF58E /* cv_scaler.h */,
+				FA74587F244CD88200FBF58E /* drivers */,
+				FA74585B244CD88100FBF58E /* dsp */,
+				FA745894244CD88200FBF58E /* hardware_design */,
+				FA745891244CD88200FBF58E /* jlink_script */,
+				FA745893244CD88200FBF58E /* makefile */,
+				FA74589D244CD88200FBF58E /* meter.h */,
+				FA745877244CD88200FBF58E /* resources */,
+				FA74589E244CD88200FBF58E /* resources.cc */,
+				FA74587D244CD88200FBF58E /* resources.h */,
+				FA74589F244CD88200FBF58E /* settings.cc */,
+				FA74587E244CD88200FBF58E /* settings.h */,
+				FA7458A4244CD88200FBF58E /* test */,
+				FA745892244CD88200FBF58E /* ui.cc */,
+				FA745890244CD88200FBF58E /* ui.h */,
+				FA74585A244CD86400FBF58E /* xcode */,
+			);
+			sourceTree = "<group>";
+		};
+		FA74585B244CD88100FBF58E /* dsp */ = {
+			isa = PBXGroup;
+			children = (
+				FA74585C244CD88100FBF58E /* pvoc */,
+				FA745863244CD88200FBF58E /* granular_processor.cc */,
+				FA745864244CD88200FBF58E /* fx */,
+				FA745869244CD88200FBF58E /* sample_rate_converter.h */,
+				FA74586A244CD88200FBF58E /* frame.h */,
+				FA74586B244CD88200FBF58E /* wsola_sample_player.h */,
+				FA74586C244CD88200FBF58E /* window.h */,
+				FA74586D244CD88200FBF58E /* parameters.h */,
+				FA74586E244CD88200FBF58E /* mu_law.cc */,
+				FA74586F244CD88200FBF58E /* audio_buffer.h */,
+				FA745870244CD88200FBF58E /* granular_sample_player.h */,
+				FA745871244CD88200FBF58E /* granular_processor.h */,
+				FA745872244CD88200FBF58E /* correlator.cc */,
+				FA745873244CD88200FBF58E /* correlator.h */,
+				FA745874244CD88200FBF58E /* mu_law.h */,
+				FA745875244CD88200FBF58E /* grain.h */,
+				FA745876244CD88200FBF58E /* looping_sample_player.h */,
+			);
+			path = dsp;
+			sourceTree = "<group>";
+		};
+		FA74585C244CD88100FBF58E /* pvoc */ = {
+			isa = PBXGroup;
+			children = (
+				FA74585D244CD88100FBF58E /* stft.cc */,
+				FA74585E244CD88100FBF58E /* frame_transformation.h */,
+				FA74585F244CD88200FBF58E /* phase_vocoder.h */,
+				FA745860244CD88200FBF58E /* stft.h */,
+				FA745861244CD88200FBF58E /* phase_vocoder.cc */,
+				FA745862244CD88200FBF58E /* frame_transformation.cc */,
+			);
+			path = pvoc;
+			sourceTree = "<group>";
+		};
+		FA745864244CD88200FBF58E /* fx */ = {
+			isa = PBXGroup;
+			children = (
+				FA745865244CD88200FBF58E /* reverb.h */,
+				FA745866244CD88200FBF58E /* fx_engine.h */,
+				FA745867244CD88200FBF58E /* pitch_shifter.h */,
+				FA745868244CD88200FBF58E /* diffuser.h */,
+			);
+			path = fx;
+			sourceTree = "<group>";
+		};
+		FA745877244CD88200FBF58E /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA745878244CD88200FBF58E /* src_filters.py */,
+				FA745879244CD88200FBF58E /* lookup_tables.py */,
+				FA74587A244CD88200FBF58E /* __init__.py */,
+				FA74587B244CD88200FBF58E /* resources.py */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		FA74587F244CD88200FBF58E /* drivers */ = {
+			isa = PBXGroup;
+			children = (
+				FA745880244CD88200FBF58E /* codec.cc */,
+				FA745881244CD88200FBF58E /* debug_pin.h */,
+				FA745882244CD88200FBF58E /* adc.cc */,
+				FA745883244CD88200FBF58E /* adc.h */,
+				FA745884244CD88200FBF58E /* leds.cc */,
+				FA745885244CD88200FBF58E /* version.h */,
+				FA745886244CD88200FBF58E /* gate_input.h */,
+				FA745887244CD88200FBF58E /* leds.h */,
+				FA745888244CD88200FBF58E /* debug_port.cc */,
+				FA745889244CD88200FBF58E /* codec.h */,
+				FA74588A244CD88200FBF58E /* debug_port.h */,
+				FA74588B244CD88200FBF58E /* switches.cc */,
+				FA74588C244CD88200FBF58E /* system.h */,
+				FA74588D244CD88200FBF58E /* system.cc */,
+				FA74588E244CD88200FBF58E /* gate_input.cc */,
+				FA74588F244CD88200FBF58E /* switches.h */,
+			);
+			path = drivers;
+			sourceTree = "<group>";
+		};
+		FA745894244CD88200FBF58E /* hardware_design */ = {
+			isa = PBXGroup;
+			children = (
+				FA745895244CD88200FBF58E /* panel */,
+				FA745898244CD88200FBF58E /* Clouds.xlsx */,
+				FA745899244CD88200FBF58E /* pcb */,
+			);
+			path = hardware_design;
+			sourceTree = "<group>";
+		};
+		FA745895244CD88200FBF58E /* panel */ = {
+			isa = PBXGroup;
+			children = (
+				FA745896244CD88200FBF58E /* clouds.dwg */,
+				FA745897244CD88200FBF58E /* clouds.ai */,
+			);
+			path = panel;
+			sourceTree = "<group>";
+		};
+		FA745899244CD88200FBF58E /* pcb */ = {
+			isa = PBXGroup;
+			children = (
+				FA74589A244CD88200FBF58E /* clouds_v30.brd */,
+				FA74589B244CD88200FBF58E /* clouds_v30.sch */,
+			);
+			path = pcb;
+			sourceTree = "<group>";
+		};
+		FA7458A0244CD88200FBF58E /* bootloader */ = {
+			isa = PBXGroup;
+			children = (
+				FA7458A1244CD88200FBF58E /* makefile */,
+				FA7458A2244CD88200FBF58E /* bootloader.cc */,
+				FA7458A3244CD88200FBF58E /* __init__.py */,
+			);
+			path = bootloader;
+			sourceTree = "<group>";
+		};
+		FA7458A4244CD88200FBF58E /* test */ = {
+			isa = PBXGroup;
+			children = (
+				FA7458A5244CD88200FBF58E /* makefile */,
+				FA7458A6244CD88200FBF58E /* clouds_test.cc */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		FA74584A244CD71A00FBF58E /* blink */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f blink/makefile $(ACTION)";
+			buildConfigurationList = FA74584B244CD71A00FBF58E /* Build configuration list for PBXLegacyTarget "blink" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/alex/folabs/folabs-dev-environment/eurorack-modules/";
+			dependencies = (
+				FA7458C8244CD9E700FBF58E /* PBXTargetDependency */,
+			);
+			name = blink;
+			passBuildSettingsInEnvironment = 1;
+			productName = blinkTest;
+		};
+		FA7458BF244CD95B00FBF58E /* blink bootloader */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f blink/bootloader/makefile $(ACTION)";
+			buildConfigurationList = FA7458C0244CD95B00FBF58E /* Build configuration list for PBXLegacyTarget "blink bootloader" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/alex/folabs/folabs-dev-environment/eurorack-modules/";
+			dependencies = (
+			);
+			name = "blink bootloader";
+			passBuildSettingsInEnvironment = 1;
+			productName = "blink bootloader";
+		};
+		FA7458C3244CD98900FBF58E /* blink upload */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f blink/makefile upload_jlink";
+			buildConfigurationList = FA7458C4244CD98900FBF58E /* Build configuration list for PBXLegacyTarget "blink upload" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/alex/folabs/folabs-dev-environment/eurorack-modules/";
+			dependencies = (
+				FA7458CA244CDA0D00FBF58E /* PBXTargetDependency */,
+			);
+			name = "blink upload";
+			passBuildSettingsInEnvironment = 1;
+			productName = "blink upload";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		FA745851244CD7D100FBF58E /* xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA745857244CD7D100FBF58E /* Build configuration list for PBXNativeTarget "xcode" */;
+			buildPhases = (
+				FA74584E244CD7D100FBF58E /* Sources */,
+				FA74584F244CD7D100FBF58E /* Frameworks */,
+				FA745850244CD7D100FBF58E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xcode;
+			productName = xcode;
+			productReference = FA74585A244CD86400FBF58E /* xcode */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA2413DB244138FB00D84FCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				TargetAttributes = {
+					FA74584A244CD71A00FBF58E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					FA745851244CD7D100FBF58E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					FA7458BF244CD95B00FBF58E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					FA7458C3244CD98900FBF58E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = FA2413DE244138FB00D84FCD /* Build configuration list for PBXProject "blink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA2413DA244138FB00D84FCD;
+			productRefGroup = FA2413DA244138FB00D84FCD;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA74584A244CD71A00FBF58E /* blink */,
+				FA7458BF244CD95B00FBF58E /* blink bootloader */,
+				FA7458C3244CD98900FBF58E /* blink upload */,
+				FA745851244CD7D100FBF58E /* xcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA74584E244CD7D100FBF58E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7458AB244CD88200FBF58E /* granular_processor.cc in Sources */,
+				FA7458B8244CD88200FBF58E /* cv_scaler.cc in Sources */,
+				FA7458BA244CD88200FBF58E /* settings.cc in Sources */,
+				FA7458AC244CD88200FBF58E /* mu_law.cc in Sources */,
+				FA7458BE244CD88200FBF58E /* clouds_test.cc in Sources */,
+				FA7458B4244CD88200FBF58E /* system.cc in Sources */,
+				FA7458AF244CD88200FBF58E /* codec.cc in Sources */,
+				FA7458AE244CD88200FBF58E /* blink.cc in Sources */,
+				FA7458AA244CD88200FBF58E /* frame_transformation.cc in Sources */,
+				FA7458B9244CD88200FBF58E /* resources.cc in Sources */,
+				FA7458B7244CD88200FBF58E /* makefile in Sources */,
+				FA7458B1244CD88200FBF58E /* leds.cc in Sources */,
+				FA7458B0244CD88200FBF58E /* adc.cc in Sources */,
+				FA7458BD244CD88200FBF58E /* makefile in Sources */,
+				FA7458B2244CD88200FBF58E /* debug_port.cc in Sources */,
+				FA7458B6244CD88200FBF58E /* ui.cc in Sources */,
+				FA7458BB244CD88200FBF58E /* makefile in Sources */,
+				FA7458A9244CD88200FBF58E /* phase_vocoder.cc in Sources */,
+				FA7458B3244CD88200FBF58E /* switches.cc in Sources */,
+				FA7458AD244CD88200FBF58E /* correlator.cc in Sources */,
+				FA7458A8244CD88200FBF58E /* stft.cc in Sources */,
+				FA7458BC244CD88200FBF58E /* bootloader.cc in Sources */,
+				FA7458B5244CD88200FBF58E /* gate_input.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA7458C8244CD9E700FBF58E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7458BF244CD95B00FBF58E /* blink bootloader */;
+			targetProxy = FA7458C7244CD9E700FBF58E /* PBXContainerItemProxy */;
+		};
+		FA7458CA244CDA0D00FBF58E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA74584A244CD71A00FBF58E /* blink */;
+			targetProxy = FA7458C9244CDA0D00FBF58E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA2413DC244138FB00D84FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		FA2413DD244138FB00D84FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+		FA74584C244CD71A00FBF58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA74584D244CD71A00FBF58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA745858244CD7D100FBF58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA745859244CD7D100FBF58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA7458C1244CD95B00FBF58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA7458C2244CD95B00FBF58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA7458C5244CD98900FBF58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA7458C6244CD98900FBF58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA2413DE244138FB00D84FCD /* Build configuration list for PBXProject "blink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2413DC244138FB00D84FCD /* Debug */,
+				FA2413DD244138FB00D84FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA74584B244CD71A00FBF58E /* Build configuration list for PBXLegacyTarget "blink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA74584C244CD71A00FBF58E /* Debug */,
+				FA74584D244CD71A00FBF58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA745857244CD7D100FBF58E /* Build configuration list for PBXNativeTarget "xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA745858244CD7D100FBF58E /* Debug */,
+				FA745859244CD7D100FBF58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7458C0244CD95B00FBF58E /* Build configuration list for PBXLegacyTarget "blink bootloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7458C1244CD95B00FBF58E /* Debug */,
+				FA7458C2244CD95B00FBF58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7458C4244CD98900FBF58E /* Build configuration list for PBXLegacyTarget "blink upload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7458C5244CD98900FBF58E /* Debug */,
+				FA7458C6244CD98900FBF58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA2413DB244138FB00D84FCD /* Project object */;
+}
