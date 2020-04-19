@@ -26,8 +26,8 @@
 //
 // Driver for the gate inputs.
 
-#ifndef CLOUDS_DRIVERS_GATE_INPUT_H_
-#define CLOUDS_DRIVERS_GATE_INPUT_H_
+#ifndef BLINK_DRIVERS_GATE_INPUT_H_
+#define BLINK_DRIVERS_GATE_INPUT_H_
 
 #include "stmlib/stmlib.h"
 
@@ -69,4 +69,4 @@ class GateInput {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DRIVERS_GATE_INPUT_H_
+#endif  // BLINK_DRIVERS_GATE_INPUT_H_

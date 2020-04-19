@@ -26,8 +26,8 @@
 //
 // WSOLA playback.
 
-#ifndef CLOUDS_DSP_WSOLA_SAMPLE_PLAYER_H_
-#define CLOUDS_DSP_WSOLA_SAMPLE_PLAYER_H_
+#ifndef BLINK_DSP_WSOLA_SAMPLE_PLAYER_H_
+#define BLINK_DSP_WSOLA_SAMPLE_PLAYER_H_
 
 #include <algorithm>
 
@@ -287,4 +287,4 @@ class WSOLASamplePlayer {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_WSOLA_SAMPLE_PLAYER_H_
+#endif  // BLINK_DSP_WSOLA_SAMPLE_PLAYER_H_

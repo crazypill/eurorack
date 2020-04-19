@@ -26,8 +26,8 @@
 //
 // STFT with overlap-add.
 
-#ifndef CLOUDS_DSP_PVOC_STFT_H_
-#define CLOUDS_DSP_PVOC_STFT_H_
+#ifndef BLINK_DSP_PVOC_STFT_H_
+#define BLINK_DSP_PVOC_STFT_H_
 
 #include "stmlib/stmlib.h"
 
@@ -113,4 +113,4 @@ class STFT {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_PVOC_STFT_H_
+#endif  // BLINK_DSP_PVOC_STFT_H_

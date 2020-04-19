@@ -26,8 +26,8 @@
 //
 // Granular playback of audio stored in a buffer.
 
-#ifndef CLOUDS_DSP_GRANULAR_SAMPLE_PLAYER_H_
-#define CLOUDS_DSP_GRANULAR_SAMPLE_PLAYER_H_
+#ifndef BLINK_DSP_GRANULAR_SAMPLE_PLAYER_H_
+#define BLINK_DSP_GRANULAR_SAMPLE_PLAYER_H_
 
 #include "stmlib/stmlib.h"
 
@@ -253,4 +253,4 @@ class GranularSamplePlayer {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_GRANULAR_SAMPLE_PLAYER_H_
+#endif  // BLINK_DSP_GRANULAR_SAMPLE_PLAYER_H_

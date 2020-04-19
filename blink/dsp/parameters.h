@@ -26,8 +26,8 @@
 //
 // Parameters of the granular effect.
 
-#ifndef CLOUDS_DSP_PARAMETERS_H_
-#define CLOUDS_DSP_PARAMETERS_H_
+#ifndef BLINK_DSP_PARAMETERS_H_
+#define BLINK_DSP_PARAMETERS_H_
 
 #include "stmlib/stmlib.h"
 
@@ -65,4 +65,4 @@ struct Parameters {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_PARAMETERS_H_
+#endif  // BLINK_DSP_PARAMETERS_H_

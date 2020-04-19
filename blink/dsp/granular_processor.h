@@ -26,8 +26,8 @@
 //
 // Main processing class.
 
-#ifndef CLOUDS_DSP_GRANULAR_PROCESSOR_H_
-#define CLOUDS_DSP_GRANULAR_PROCESSOR_H_
+#ifndef BLINK_DSP_GRANULAR_PROCESSOR_H_
+#define BLINK_DSP_GRANULAR_PROCESSOR_H_
 
 #include "stmlib/stmlib.h"
 #include "stmlib/dsp/filter.h"
@@ -212,4 +212,4 @@ class GranularProcessor {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_GRANULAR_PROCESSOR_H_
+#endif  // BLINK_DSP_GRANULAR_PROCESSOR_H_

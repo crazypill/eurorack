@@ -26,8 +26,8 @@
 //
 // Naive playback of audio stored in a buffer.
 
-#ifndef CLOUDS_DSP_LOOPING_SAMPLE_PLAYER_H_
-#define CLOUDS_DSP_LOOPING_SAMPLE_PLAYER_H_
+#ifndef BLINK_DSP_LOOPING_SAMPLE_PLAYER_H_
+#define BLINK_DSP_LOOPING_SAMPLE_PLAYER_H_
 
 #include "stmlib/stmlib.h"
 
@@ -203,4 +203,4 @@ class LoopingSamplePlayer {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_LOOPING_SAMPLE_PLAYER_H_
+#endif  // BLINK_DSP_LOOPING_SAMPLE_PLAYER_H_

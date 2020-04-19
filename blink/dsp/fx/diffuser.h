@@ -26,8 +26,8 @@
 //
 // AP diffusion network.
 
-#ifndef CLOUDS_DSP_FX_DIFFUSER_H_
-#define CLOUDS_DSP_FX_DIFFUSER_H_
+#ifndef BLINK_DSP_FX_DIFFUSER_H_
+#define BLINK_DSP_FX_DIFFUSER_H_
 
 #include "stmlib/stmlib.h"
 
@@ -109,4 +109,4 @@ class Diffuser {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_FX_DIFFUSER_H_
+#endif  // BLINK_DSP_FX_DIFFUSER_H_

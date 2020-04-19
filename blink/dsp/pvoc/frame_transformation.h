@@ -26,8 +26,8 @@
 //
 // Transformations applied to a single STFT slice.
 
-#ifndef CLOUDS_DSP_PVOC_FRAME_TRANSFORMATION_H_
-#define CLOUDS_DSP_PVOC_FRAME_TRANSFORMATION_H_
+#ifndef BLINK_DSP_PVOC_FRAME_TRANSFORMATION_H_
+#define BLINK_DSP_PVOC_FRAME_TRANSFORMATION_H_
 
 #include "stmlib/stmlib.h"
 
@@ -97,4 +97,4 @@ class FrameTransformation {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_PVOC_FRAME_TRANSFORMATION_H_
+#endif  // BLINK_DSP_PVOC_FRAME_TRANSFORMATION_H_

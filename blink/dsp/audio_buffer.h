@@ -26,8 +26,8 @@
 //
 // Circular buffer storing audio samples.
 
-#ifndef CLOUDS_DSP_AUDIO_BUFFER_H_
-#define CLOUDS_DSP_AUDIO_BUFFER_H_
+#ifndef BLINK_DSP_AUDIO_BUFFER_H_
+#define BLINK_DSP_AUDIO_BUFFER_H_
 
 #include <algorithm>
 
@@ -299,4 +299,4 @@ class AudioBuffer {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_AUDIO_BUFFER_H_
+#endif  // BLINK_DSP_AUDIO_BUFFER_H_

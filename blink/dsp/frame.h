@@ -26,8 +26,8 @@
 //
 // Audio processing frames.
 
-#ifndef CLOUDS_DSP_FRAME_H_
-#define CLOUDS_DSP_FRAME_H_
+#ifndef BLINK_DSP_FRAME_H_
+#define BLINK_DSP_FRAME_H_
 
 #include "stmlib/stmlib.h"
 
@@ -41,4 +41,4 @@ typedef struct { float l; float r; } FloatFrame;
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_FRAME_H_
+#endif  // BLINK_DSP_FRAME_H_

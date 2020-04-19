@@ -26,8 +26,8 @@
 //
 // Driver for the debug (timing) pin.
 
-#ifndef CLOUDS_DRIVERS_DEBUG_PIN_H_
-#define CLOUDS_DRIVERS_DEBUG_PIN_H_
+#ifndef BLINK_DRIVERS_DEBUG_PIN_H_
+#define BLINK_DRIVERS_DEBUG_PIN_H_
 
 #include "stmlib/stmlib.h"
 
@@ -73,4 +73,4 @@ class DebugPin {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DRIVERS_DEBUG_PIN_H_
+#endif  // BLINK_DRIVERS_DEBUG_PIN_H_

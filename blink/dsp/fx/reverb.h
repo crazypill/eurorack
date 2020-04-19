@@ -26,8 +26,8 @@
 //
 // Reverb.
 
-#ifndef CLOUDS_DSP_FX_REVERB_H_
-#define CLOUDS_DSP_FX_REVERB_H_
+#ifndef BLINK_DSP_FX_REVERB_H_
+#define BLINK_DSP_FX_REVERB_H_
 
 #include "stmlib/stmlib.h"
 
@@ -177,4 +177,4 @@ class Reverb {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_FX_REVERB_H_
+#endif  // BLINK_DSP_FX_REVERB_H_

@@ -26,8 +26,8 @@
 //
 // Naive phase vocoder.
 
-#ifndef CLOUDS_DSP_PVOC_PHASE_VOCODER_H_
-#define CLOUDS_DSP_PVOC_PHASE_VOCODER_H_
+#ifndef BLINK_DSP_PVOC_PHASE_VOCODER_H_
+#define BLINK_DSP_PVOC_PHASE_VOCODER_H_
 
 #include "stmlib/stmlib.h"
 
@@ -73,4 +73,4 @@ class PhaseVocoder {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_PVOC_PHASE_VOCODER_H_
+#endif  // BLINK_DSP_PVOC_PHASE_VOCODER_H_

@@ -26,8 +26,8 @@
 //
 // Sample rate converter
 
-#ifndef CLOUDS_DSP_SAMPLE_RATE_CONVERTER_H_
-#define CLOUDS_DSP_SAMPLE_RATE_CONVERTER_H_
+#ifndef BLINK_DSP_SAMPLE_RATE_CONVERTER_H_
+#define BLINK_DSP_SAMPLE_RATE_CONVERTER_H_
 
 #include "stmlib/stmlib.h"
 
@@ -93,4 +93,4 @@ class SampleRateConverter {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_SAMPLE_RATE_CONVERTER_H_
+#endif  // BLINK_DSP_SAMPLE_RATE_CONVERTER_H_

@@ -26,8 +26,8 @@
 //
 // User interface
 
-#ifndef CLOUDS_UI_H_
-#define CLOUDS_UI_H_
+#ifndef BLINK_UI_H_
+#define BLINK_UI_H_
 
 #include "stmlib/stmlib.h"
 
@@ -127,4 +127,4 @@ class Ui {
 
 }  // namespace blink
 
-#endif  // CLOUDS_UI_H_
+#endif  // BLINK_UI_H_

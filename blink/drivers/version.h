@@ -26,8 +26,8 @@
 //
 // Driver for reading the hardware revision pin.
 
-#ifndef CLOUDS_DRIVERS_VERSION_H_
-#define CLOUDS_DRIVERS_VERSION_H_
+#ifndef BLINK_DRIVERS_VERSION_H_
+#define BLINK_DRIVERS_VERSION_H_
 
 #include "stmlib/stmlib.h"
 
@@ -59,4 +59,4 @@ class Version {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DRIVERS_VERSION_H_
+#endif  // BLINK_DRIVERS_VERSION_H_

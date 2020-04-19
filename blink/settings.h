@@ -26,8 +26,8 @@
 //
 // Settings storage.
 
-#ifndef CLOUDS_SETTINGS_H_
-#define CLOUDS_SETTINGS_H_
+#ifndef BLINK_SETTINGS_H_
+#define BLINK_SETTINGS_H_
 
 #include "stmlib/stmlib.h"
 
@@ -110,4 +110,4 @@ class Settings {
 
 }  // namespace blink
 
-#endif  // CLOUDS_SETTINGS_H_
+#endif  // BLINK_SETTINGS_H_

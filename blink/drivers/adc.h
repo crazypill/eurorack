@@ -26,8 +26,8 @@
 //
 // Driver for ADC.
 
-#ifndef CLOUDS_DRIVERS_ADC_H_
-#define CLOUDS_DRIVERS_ADC_H_
+#ifndef BLINK_DRIVERS_ADC_H_
+#define BLINK_DRIVERS_ADC_H_
 
 #include "stmlib/stmlib.h"
 
@@ -69,4 +69,4 @@ class Adc {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DRIVERS_ADC_H_
+#endif  // BLINK_DRIVERS_ADC_H_

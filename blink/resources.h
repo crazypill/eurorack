@@ -30,8 +30,8 @@
 // make resources
 
 
-#ifndef CLOUDS_RESOURCES_H_
-#define CLOUDS_RESOURCES_H_
+#ifndef BLINK_RESOURCES_H_
+#define BLINK_RESOURCES_H_
 
 
 #include "stmlib/stmlib.h"
@@ -90,4 +90,4 @@ extern const float lut_quantized_pitch[];
 
 }  // namespace blink
 
-#endif  // CLOUDS_RESOURCES_H_
+#endif  // BLINK_RESOURCES_H_

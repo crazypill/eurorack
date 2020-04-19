@@ -26,8 +26,8 @@
 //
 // Base class for building reverbs.
 
-#ifndef CLOUDS_DSP_FX_FX_ENGINE_H_
-#define CLOUDS_DSP_FX_FX_ENGINE_H_
+#ifndef BLINK_DSP_FX_FX_ENGINE_H_
+#define BLINK_DSP_FX_FX_ENGINE_H_
 
 #include <algorithm>
 
@@ -299,4 +299,4 @@ class FxEngine {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_FX_FX_ENGINE_H_
+#endif  // BLINK_DSP_FX_FX_ENGINE_H_

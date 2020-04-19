@@ -13,7 +13,6 @@
 		FA7458AB244CD88200FBF58E /* granular_processor.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745863244CD88200FBF58E /* granular_processor.cc */; };
 		FA7458AC244CD88200FBF58E /* mu_law.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74586E244CD88200FBF58E /* mu_law.cc */; };
 		FA7458AD244CD88200FBF58E /* correlator.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745872244CD88200FBF58E /* correlator.cc */; };
-		FA7458AE244CD88200FBF58E /* blink.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74587C244CD88200FBF58E /* blink.cc */; };
 		FA7458AF244CD88200FBF58E /* codec.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745880244CD88200FBF58E /* codec.cc */; };
 		FA7458B0244CD88200FBF58E /* adc.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745882244CD88200FBF58E /* adc.cc */; };
 		FA7458B1244CD88200FBF58E /* leds.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA745884244CD88200FBF58E /* leds.cc */; };
@@ -30,6 +29,7 @@
 		FA7458BC244CD88200FBF58E /* bootloader.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA7458A2244CD88200FBF58E /* bootloader.cc */; };
 		FA7458BD244CD88200FBF58E /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = FA7458A5244CD88200FBF58E /* makefile */; };
 		FA7458BE244CD88200FBF58E /* clouds_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA7458A6244CD88200FBF58E /* clouds_test.cc */; };
+		FA7458CC244CDC8C00FBF58E /* blink.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA74587C244CD88200FBF58E /* blink.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,23 +147,22 @@
 			isa = PBXGroup;
 			children = (
 				FA74587C244CD88200FBF58E /* blink.cc */,
-				FA7458A0244CD88200FBF58E /* bootloader */,
 				FA74589C244CD88200FBF58E /* cv_scaler.cc */,
 				FA7458A7244CD88200FBF58E /* cv_scaler.h */,
-				FA74587F244CD88200FBF58E /* drivers */,
-				FA74585B244CD88100FBF58E /* dsp */,
-				FA745894244CD88200FBF58E /* hardware_design */,
-				FA745891244CD88200FBF58E /* jlink_script */,
-				FA745893244CD88200FBF58E /* makefile */,
 				FA74589D244CD88200FBF58E /* meter.h */,
-				FA745877244CD88200FBF58E /* resources */,
 				FA74589E244CD88200FBF58E /* resources.cc */,
 				FA74587D244CD88200FBF58E /* resources.h */,
 				FA74589F244CD88200FBF58E /* settings.cc */,
 				FA74587E244CD88200FBF58E /* settings.h */,
-				FA7458A4244CD88200FBF58E /* test */,
 				FA745892244CD88200FBF58E /* ui.cc */,
 				FA745890244CD88200FBF58E /* ui.h */,
+				FA74587F244CD88200FBF58E /* drivers */,
+				FA74585B244CD88100FBF58E /* dsp */,
+				FA745894244CD88200FBF58E /* hardware_design */,
+				FA745877244CD88200FBF58E /* resources */,
+				FA7458A0244CD88200FBF58E /* bootloader */,
+				FA7458CB244CDC3F00FBF58E /* make */,
+				FA7458A4244CD88200FBF58E /* test */,
 				FA74585A244CD86400FBF58E /* xcode */,
 			);
 			sourceTree = "<group>";
@@ -171,23 +170,23 @@
 		FA74585B244CD88100FBF58E /* dsp */ = {
 			isa = PBXGroup;
 			children = (
-				FA74585C244CD88100FBF58E /* pvoc */,
-				FA745863244CD88200FBF58E /* granular_processor.cc */,
-				FA745864244CD88200FBF58E /* fx */,
-				FA745869244CD88200FBF58E /* sample_rate_converter.h */,
-				FA74586A244CD88200FBF58E /* frame.h */,
-				FA74586B244CD88200FBF58E /* wsola_sample_player.h */,
-				FA74586C244CD88200FBF58E /* window.h */,
-				FA74586D244CD88200FBF58E /* parameters.h */,
-				FA74586E244CD88200FBF58E /* mu_law.cc */,
 				FA74586F244CD88200FBF58E /* audio_buffer.h */,
-				FA745870244CD88200FBF58E /* granular_sample_player.h */,
-				FA745871244CD88200FBF58E /* granular_processor.h */,
-				FA745872244CD88200FBF58E /* correlator.cc */,
 				FA745873244CD88200FBF58E /* correlator.h */,
-				FA745874244CD88200FBF58E /* mu_law.h */,
+				FA745872244CD88200FBF58E /* correlator.cc */,
+				FA74586A244CD88200FBF58E /* frame.h */,
 				FA745875244CD88200FBF58E /* grain.h */,
+				FA745871244CD88200FBF58E /* granular_processor.h */,
+				FA745863244CD88200FBF58E /* granular_processor.cc */,
+				FA745870244CD88200FBF58E /* granular_sample_player.h */,
 				FA745876244CD88200FBF58E /* looping_sample_player.h */,
+				FA74586E244CD88200FBF58E /* mu_law.cc */,
+				FA745874244CD88200FBF58E /* mu_law.h */,
+				FA74586D244CD88200FBF58E /* parameters.h */,
+				FA745869244CD88200FBF58E /* sample_rate_converter.h */,
+				FA74586C244CD88200FBF58E /* window.h */,
+				FA74586B244CD88200FBF58E /* wsola_sample_player.h */,
+				FA745864244CD88200FBF58E /* fx */,
+				FA74585C244CD88100FBF58E /* pvoc */,
 			);
 			path = dsp;
 			sourceTree = "<group>";
@@ -195,12 +194,12 @@
 		FA74585C244CD88100FBF58E /* pvoc */ = {
 			isa = PBXGroup;
 			children = (
+				FA745860244CD88200FBF58E /* stft.h */,
 				FA74585D244CD88100FBF58E /* stft.cc */,
 				FA74585E244CD88100FBF58E /* frame_transformation.h */,
-				FA74585F244CD88200FBF58E /* phase_vocoder.h */,
-				FA745860244CD88200FBF58E /* stft.h */,
-				FA745861244CD88200FBF58E /* phase_vocoder.cc */,
 				FA745862244CD88200FBF58E /* frame_transformation.cc */,
+				FA74585F244CD88200FBF58E /* phase_vocoder.h */,
+				FA745861244CD88200FBF58E /* phase_vocoder.cc */,
 			);
 			path = pvoc;
 			sourceTree = "<group>";
@@ -230,22 +229,22 @@
 		FA74587F244CD88200FBF58E /* drivers */ = {
 			isa = PBXGroup;
 			children = (
+				FA745889244CD88200FBF58E /* codec.h */,
 				FA745880244CD88200FBF58E /* codec.cc */,
 				FA745881244CD88200FBF58E /* debug_pin.h */,
-				FA745882244CD88200FBF58E /* adc.cc */,
-				FA745883244CD88200FBF58E /* adc.h */,
-				FA745884244CD88200FBF58E /* leds.cc */,
-				FA745885244CD88200FBF58E /* version.h */,
-				FA745886244CD88200FBF58E /* gate_input.h */,
-				FA745887244CD88200FBF58E /* leds.h */,
-				FA745888244CD88200FBF58E /* debug_port.cc */,
-				FA745889244CD88200FBF58E /* codec.h */,
 				FA74588A244CD88200FBF58E /* debug_port.h */,
+				FA745888244CD88200FBF58E /* debug_port.cc */,
+				FA745883244CD88200FBF58E /* adc.h */,
+				FA745882244CD88200FBF58E /* adc.cc */,
+				FA745887244CD88200FBF58E /* leds.h */,
+				FA745884244CD88200FBF58E /* leds.cc */,
+				FA745886244CD88200FBF58E /* gate_input.h */,
+				FA74588E244CD88200FBF58E /* gate_input.cc */,
+				FA74588F244CD88200FBF58E /* switches.h */,
 				FA74588B244CD88200FBF58E /* switches.cc */,
 				FA74588C244CD88200FBF58E /* system.h */,
 				FA74588D244CD88200FBF58E /* system.cc */,
-				FA74588E244CD88200FBF58E /* gate_input.cc */,
-				FA74588F244CD88200FBF58E /* switches.h */,
+				FA745885244CD88200FBF58E /* version.h */,
 			);
 			path = drivers;
 			sourceTree = "<group>";
@@ -295,6 +294,15 @@
 				FA7458A6244CD88200FBF58E /* clouds_test.cc */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		FA7458CB244CDC3F00FBF58E /* make */ = {
+			isa = PBXGroup;
+			children = (
+				FA745891244CD88200FBF58E /* jlink_script */,
+				FA745893244CD88200FBF58E /* makefile */,
+			);
+			name = make;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,7 +427,6 @@
 				FA7458BE244CD88200FBF58E /* clouds_test.cc in Sources */,
 				FA7458B4244CD88200FBF58E /* system.cc in Sources */,
 				FA7458AF244CD88200FBF58E /* codec.cc in Sources */,
-				FA7458AE244CD88200FBF58E /* blink.cc in Sources */,
 				FA7458AA244CD88200FBF58E /* frame_transformation.cc in Sources */,
 				FA7458B9244CD88200FBF58E /* resources.cc in Sources */,
 				FA7458B7244CD88200FBF58E /* makefile in Sources */,
@@ -434,6 +441,7 @@
 				FA7458AD244CD88200FBF58E /* correlator.cc in Sources */,
 				FA7458A8244CD88200FBF58E /* stft.cc in Sources */,
 				FA7458BC244CD88200FBF58E /* bootloader.cc in Sources */,
+				FA7458CC244CDC8C00FBF58E /* blink.cc in Sources */,
 				FA7458B5244CD88200FBF58E /* gate_input.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

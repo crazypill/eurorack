@@ -26,8 +26,8 @@
 //
 // Mu-law encoding.
 
-#ifndef CLOUDS_DSP_MU_LAW_H_
-#define CLOUDS_DSP_MU_LAW_H_
+#ifndef BLINK_DSP_MU_LAW_H_
+#define BLINK_DSP_MU_LAW_H_
 
 #include "stmlib/stmlib.h"
 
@@ -80,4 +80,4 @@ inline unsigned char Lin2MuLaw(int16_t pcm_val) {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_MU_LAW_H_
+#endif  // BLINK_DSP_MU_LAW_H_

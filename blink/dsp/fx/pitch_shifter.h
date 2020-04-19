@@ -26,8 +26,8 @@
 //
 // Pitch shifter.
 
-#ifndef CLOUDS_DSP_FX_PITCH_SHIFTER_H_
-#define CLOUDS_DSP_FX_PITCH_SHIFTER_H_
+#ifndef BLINK_DSP_FX_PITCH_SHIFTER_H_
+#define BLINK_DSP_FX_PITCH_SHIFTER_H_
 
 #include "stmlib/stmlib.h"
 
@@ -113,4 +113,4 @@ class PitchShifter {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_FX_MINI_CHORUS_H_
+#endif  // BLINK_DSP_FX_MINI_CHORUS_H_

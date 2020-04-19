@@ -26,8 +26,8 @@
 //
 // WM8371 Codec support.
 
-#ifndef CLOUDS_DRIVERS_CODEC_H_
-#define CLOUDS_DRIVERS_CODEC_H_
+#ifndef BLINK_DRIVERS_CODEC_H_
+#define BLINK_DRIVERS_CODEC_H_
 
 #include <stm32f4xx_conf.h>
 
@@ -99,4 +99,4 @@ class Codec {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DRIVERS_CODEC_H_
+#endif  // BLINK_DRIVERS_CODEC_H_

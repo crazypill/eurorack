@@ -26,8 +26,8 @@
 //
 // UART driver for conversing with the factory testing program.
 
-#ifndef CLOUDS_DRIVERS_DEBUG_PORT_H_
-#define CLOUDS_DRIVERS_DEBUG_PORT_H_
+#ifndef BLINK_DRIVERS_DEBUG_PORT_H_
+#define BLINK_DRIVERS_DEBUG_PORT_H_
 
 #include "stmlib/stmlib.h"
 
@@ -65,4 +65,4 @@ class DebugPort {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DRIVERS_DEBUG_PORT_H_
+#endif  // BLINK_DRIVERS_DEBUG_PORT_H_

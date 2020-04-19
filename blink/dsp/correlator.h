@@ -28,8 +28,8 @@
 // Correlation is computed by XOR-ing the bit sign of samples - this allows
 // 32 samples to be matched in one single XOR operation.
 
-#ifndef CLOUDS_DSP_CORRELATOR_H_
-#define CLOUDS_DSP_CORRELATOR_H_
+#ifndef BLINK_DSP_CORRELATOR_H_
+#define BLINK_DSP_CORRELATOR_H_
 
 #include "stmlib/stmlib.h"
 
@@ -85,4 +85,4 @@ class Correlator {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_CORRELATOR_H_
+#endif  // BLINK_DSP_CORRELATOR_H_

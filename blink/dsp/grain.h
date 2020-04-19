@@ -26,8 +26,8 @@
 //
 // Single grain synthesis.
 
-#ifndef CLOUDS_DSP_GRAIN_H_
-#define CLOUDS_DSP_GRAIN_H_
+#ifndef BLINK_DSP_GRAIN_H_
+#define BLINK_DSP_GRAIN_H_
 
 #include "stmlib/stmlib.h"
 
@@ -202,4 +202,4 @@ class Grain {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_GRAIN_H_
+#endif  // BLINK_DSP_GRAIN_H_

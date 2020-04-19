@@ -26,8 +26,8 @@
 //
 // Vu-meter
 
-#ifndef CLOUDS_METER_H_
-#define CLOUDS_METER_H_
+#ifndef BLINK_METER_H_
+#define BLINK_METER_H_
 
 #include "stmlib/stmlib.h"
 
@@ -81,4 +81,4 @@ class Meter {
 
 }  // namespace blink
 
-#endif  // CLOUDS_METER_H_
+#endif  // BLINK_METER_H_

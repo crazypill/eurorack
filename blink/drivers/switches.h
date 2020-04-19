@@ -26,8 +26,8 @@
 //
 // Driver for the front panel switches.
 
-#ifndef CLOUDS_DRIVERS_SWITCHES_H_
-#define CLOUDS_DRIVERS_SWITCHES_H_
+#ifndef BLINK_DRIVERS_SWITCHES_H_
+#define BLINK_DRIVERS_SWITCHES_H_
 
 #include "stmlib/stmlib.h"
 
@@ -74,4 +74,4 @@ class Switches {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DRIVERS_SWITCHES_H_
+#endif  // BLINK_DRIVERS_SWITCHES_H_

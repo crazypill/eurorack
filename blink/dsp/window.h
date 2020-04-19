@@ -26,8 +26,8 @@
 //
 // Variant of the grain class used for WSOLA.
 
-#ifndef CLOUDS_DSP_WINDOW_H_
-#define CLOUDS_DSP_WINDOW_H_
+#ifndef BLINK_DSP_WINDOW_H_
+#define BLINK_DSP_WINDOW_H_
 
 #include "stmlib/stmlib.h"
 
@@ -121,4 +121,4 @@ class Window {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DSP_WINDOW_H_
+#endif  // BLINK_DSP_WINDOW_H_

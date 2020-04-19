@@ -26,8 +26,8 @@
 //
 // System-level initialization.
 
-#ifndef CLOUDS_DRIVERS_SYSTEM_H_
-#define CLOUDS_DRIVERS_SYSTEM_H_
+#ifndef BLINK_DRIVERS_SYSTEM_H_
+#define BLINK_DRIVERS_SYSTEM_H_
 
 #include <stm32f4xx_conf.h>
 
@@ -49,4 +49,4 @@ class System {
 
 }  // namespace blink
 
-#endif  // CLOUDS_DRIVERS_SYSTEM_H_
+#endif  // BLINK_DRIVERS_SYSTEM_H_
