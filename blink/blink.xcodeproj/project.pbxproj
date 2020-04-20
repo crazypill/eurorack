@@ -346,31 +346,31 @@
 /* Begin PBXLegacyTarget section */
 		FA74584A244CD71A00FBF58E /* blink */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-f blink/makefile $(ACTION)";
+			buildArgumentsString = "-f blink/makefile";
 			buildConfigurationList = FA74584B244CD71A00FBF58E /* Build configuration list for PBXLegacyTarget "blink" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/alex/folabs/folabs-dev-environment/eurorack-modules/";
+			buildWorkingDirectory = ../;
 			dependencies = (
 				FA7458C8244CD9E700FBF58E /* PBXTargetDependency */,
 			);
 			name = blink;
-			passBuildSettingsInEnvironment = 1;
+			passBuildSettingsInEnvironment = 0;
 			productName = blinkTest;
 		};
 		FA7458BF244CD95B00FBF58E /* blink bootloader */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-f blink/bootloader/makefile $(ACTION)";
+			buildArgumentsString = "-f blink/bootloader/makefile";
 			buildConfigurationList = FA7458C0244CD95B00FBF58E /* Build configuration list for PBXLegacyTarget "blink bootloader" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/alex/folabs/folabs-dev-environment/eurorack-modules/";
+			buildWorkingDirectory = ../;
 			dependencies = (
 			);
 			name = "blink bootloader";
-			passBuildSettingsInEnvironment = 1;
+			passBuildSettingsInEnvironment = 0;
 			productName = "blink bootloader";
 		};
 		FA7458C3244CD98900FBF58E /* blink upload */ = {
@@ -380,12 +380,12 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/alex/folabs/folabs-dev-environment/eurorack-modules/";
+			buildWorkingDirectory = ../;
 			dependencies = (
 				FA7458CA244CDA0D00FBF58E /* PBXTargetDependency */,
 			);
 			name = "blink upload";
-			passBuildSettingsInEnvironment = 1;
+			passBuildSettingsInEnvironment = 0;
 			productName = "blink upload";
 		};
 		FA7458E7244CF2D100FBF58E /* blink clean */ = {
@@ -395,11 +395,11 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/alex/folabs/folabs-dev-environment/eurorack-modules/";
+			buildWorkingDirectory = ../;
 			dependencies = (
 			);
 			name = "blink clean";
-			passBuildSettingsInEnvironment = 1;
+			passBuildSettingsInEnvironment = 0;
 			productName = "blink clean";
 		};
 /* End PBXLegacyTarget section */
