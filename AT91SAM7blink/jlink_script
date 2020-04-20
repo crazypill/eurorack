@@ -1,0 +1,6 @@
+si JTAG
+device AT91SAM7S256
+speed 4000
+loadbin build/blink/main.bin 0x00100000
+exit
+

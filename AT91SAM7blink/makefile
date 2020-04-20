@@ -76,7 +76,7 @@ clean:
 	-rm $(OBJECTS) crt.lst main.out main.bin main.map main.dmp 
 
          
-build:  main.out
+all:  main.out
 	@ echo "...copying"
 	$(CP) $(CPFLAGS) main.out main.bin
 	$(OD) $(ODFLAGS) main.out > main.dmp
@@ -134,4 +134,7 @@ upload_jtag: main.out
 				-c "flash write_image erase $(TARGET_BIN) 0x00100000" \
 				-c "verify_image $(TARGET_BIN) 0x00100000" \
 				$(POSTLUDE)
+
+upload_jlink: $(TARGET_HEX)
+	/usr/local/bin/JLinkExe jlink_script
 
