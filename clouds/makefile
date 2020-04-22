@@ -61,3 +61,6 @@ wav:  $(TARGET_BIN)
 upload_jlink: $(TARGET_HEX)
 	/usr/local/bin/JLinkExe clouds/jlink_script
 
+
+upload_combo_jlink: $(COMBO_BIN)
+	/usr/local/bin/JLinkExe clouds/jlink_combo_script

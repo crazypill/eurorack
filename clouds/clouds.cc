@@ -130,6 +130,11 @@ void Init() {
 
 int main(void) {
   Init();
+  
+  while (1)
+    ;
+
+  
   while (1) {
     ui.DoEvents();
     processor.Prepare();
