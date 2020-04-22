@@ -117,7 +117,6 @@
 		FA745876244CD88200FBF58E /* looping_sample_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = looping_sample_player.h; sourceTree = "<group>"; };
 		FA745878244CD88200FBF58E /* src_filters.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = src_filters.py; sourceTree = "<group>"; };
 		FA745879244CD88200FBF58E /* lookup_tables.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = lookup_tables.py; sourceTree = "<group>"; };
-		FA74587A244CD88200FBF58E /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
 		FA74587B244CD88200FBF58E /* resources.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = resources.py; sourceTree = "<group>"; };
 		FA74587C244CD88200FBF58E /* serial.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = serial.cc; sourceTree = "<group>"; };
 		FA74587D244CD88200FBF58E /* resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resources.h; sourceTree = "<group>"; };
@@ -148,7 +147,6 @@
 		FA74589F244CD88200FBF58E /* settings.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = settings.cc; sourceTree = "<group>"; };
 		FA7458A1244CD88200FBF58E /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		FA7458A2244CD88200FBF58E /* bootloader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bootloader.cc; sourceTree = "<group>"; };
-		FA7458A3244CD88200FBF58E /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
 		FA7458A5244CD88200FBF58E /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		FA7458A6244CD88200FBF58E /* serial_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = serial_test.cc; sourceTree = "<group>"; };
 		FA7458A7244CD88200FBF58E /* cv_scaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cv_scaler.h; sourceTree = "<group>"; };
@@ -254,7 +252,6 @@
 			children = (
 				FA745878244CD88200FBF58E /* src_filters.py */,
 				FA745879244CD88200FBF58E /* lookup_tables.py */,
-				FA74587A244CD88200FBF58E /* __init__.py */,
 				FA74587B244CD88200FBF58E /* resources.py */,
 			);
 			path = resources;
@@ -288,7 +285,6 @@
 			children = (
 				FA7458A1244CD88200FBF58E /* makefile */,
 				FA7458A2244CD88200FBF58E /* bootloader.cc */,
-				FA7458A3244CD88200FBF58E /* __init__.py */,
 			);
 			path = bootloader;
 			sourceTree = "<group>";

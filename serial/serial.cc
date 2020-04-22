@@ -71,6 +71,15 @@ extern "C" {
 
 void SysTick_Handler() {
   ui.Poll();
+
+    uint8_t byte = 'a';
+    debug_port.Write( byte++ );
+    if( byte > 'z' )
+        byte = 'a';
+    if( debug_port.writable() )
+        debug_port.Write( byte );
+
+    
   if (settings.freshly_baked()) {
     if (debug_port.readable()) {
       uint8_t command = debug_port.Read();
@@ -86,9 +95,9 @@ void FillBuffer(Codec::Frame* input, Codec::Frame* output, size_t n) {
 #ifdef PROFILE_INTERRUPT
   TIC
 #endif  // PROFILE_INTERRUPT
-  cv_scaler.Read(processor.mutable_parameters());
-  processor.Process((ShortFrame*)input, (ShortFrame*)output, n);
-  meter.Process(processor.parameters().freeze ? output : input, n);
+//  cv_scaler.Read(processor.mutable_parameters());
+//  processor.Process((ShortFrame*)input, (ShortFrame*)output, n);
+//  meter.Process(processor.parameters().freeze ? output : input, n);
 #ifdef PROFILE_INTERRUPT
   TOC
 #endif  // PROFILE_INTERRUPT
@@ -103,12 +112,12 @@ void Init()
     version.Init();
     
     // Init granular processor.
-    processor.Init(
-                   block_mem, sizeof(block_mem),
-                   block_ccm, sizeof(block_ccm));
-    
-    settings.Init();
-    cv_scaler.Init(settings.mutable_calibration_data());
+//    processor.Init(
+//                   block_mem, sizeof(block_mem),
+//                   block_ccm, sizeof(block_ccm));
+//
+//    settings.Init();
+//    cv_scaler.Init(settings.mutable_calibration_data());
     meter.Init(32000);
     ui.Init(&settings, &cv_scaler, &processor, &meter);
     
@@ -127,6 +136,8 @@ void Init()
 
 void DebugHello(void)
 {
+
+    
     while( 1 )
     {
         uint8_t byte = 'a';

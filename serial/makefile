@@ -39,6 +39,7 @@ UPLOAD_COMMAND  = upload_combo_jtag_erase_first
 TARGET         = serial
 PACKAGES       = serial \
 		serial/drivers \
+		serial/tm_stm32f4_usart \
 		serial/dsp \
 		serial/dsp/pvoc \
 		stmlib/dsp \
