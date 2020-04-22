@@ -43,22 +43,55 @@ class DebugPort {
   
   void Init();
   
-  bool writable() {
-    return USART1->SR & USART_FLAG_TXE;
-  }
+//  bool writable() {
+//    return USART1->SR & USART_FLAG_TXE;
+//  }
+//  
+//  bool readable() {
+//    return USART1->SR & USART_FLAG_RXNE;
+//  }
+//  
+//  void Write(uint8_t byte) {
+//    USART1->DR = byte;
+//  }
+//  
+//  uint8_t Read() {
+//    return USART1->DR;
+//  }
   
-  bool readable() {
-    return USART1->SR & USART_FLAG_RXNE;
-  }
-  
-  void Write(uint8_t byte) {
-    USART1->DR = byte;
-  }
-  
-  uint8_t Read() {
-    return USART1->DR;
-  }
-  
+//    bool writable() {
+//        return USART2->SR & USART_FLAG_TXE;
+//    }
+//    
+//    bool readable() {
+//        return USART2->SR & USART_FLAG_RXNE;
+//    }
+//    
+//    void Write(uint8_t byte) {
+//        USART2->DR = byte;
+//    }
+//    
+//    uint8_t Read() {
+//        return USART2->DR;
+//    }
+
+    bool writable() {
+        return UART5->SR & USART_FLAG_TXE;
+    }
+    
+    bool readable() {
+        return UART5->SR & USART_FLAG_RXNE;
+    }
+    
+    void Write(uint8_t byte) {
+        UART5->DR = byte;
+    }
+    
+    uint8_t Read() {
+        return UART5->DR;
+    }
+    
+    
  private:
   DISALLOW_COPY_AND_ASSIGN(DebugPort);
 };

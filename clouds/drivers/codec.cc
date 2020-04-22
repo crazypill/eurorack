@@ -321,8 +321,10 @@ bool Codec::InitializeCodec(
 //  s = s && WriteControlRegister(CODEC_REG_LEFT_HEADPHONES_OUT, CODEC_HEADPHONES_MUTE);
 //  s = s && WriteControlRegister(CODEC_REG_RIGHT_HEADPHONES_OUT, CODEC_HEADPHONES_MUTE);
 
-  s = s && WriteControlRegister(CODEC_REG_LEFT_HEADPHONES_OUT, 0x7F);
-  s = s && WriteControlRegister(CODEC_REG_RIGHT_HEADPHONES_OUT, 0x7F);
+//  s = s && WriteControlRegister(CODEC_REG_LEFT_HEADPHONES_OUT, 0x7F);
+//  s = s && WriteControlRegister(CODEC_REG_RIGHT_HEADPHONES_OUT, 0x7F);
+    s = s && WriteControlRegister(CODEC_REG_LEFT_HEADPHONES_OUT, 0x4F);
+    s = s && WriteControlRegister(CODEC_REG_RIGHT_HEADPHONES_OUT, 0x4F);
 
   // Configure analog routing
   s = s && WriteControlRegister(
