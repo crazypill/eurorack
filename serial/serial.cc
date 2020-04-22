@@ -147,7 +147,7 @@ void DebugHello(void)
     uint8_t byte = 'a';
     while( 1 )
     {
-//        byte = ReadByte();
+        byte = ReadByte();
         WriteByte( byte++ );
 
         if( byte > 'z' )

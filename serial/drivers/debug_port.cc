@@ -61,21 +61,59 @@ namespace serial {
 //  USART_Cmd(USART1, ENABLE);
 //}
 
+//void DebugPort::Init() {
+//    RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
+//    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+//    
+//    // Initialize TX and RX pins.
+//    GPIO_InitTypeDef gpio_init;
+//    gpio_init.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
+//    gpio_init.GPIO_Speed = GPIO_Speed_50MHz;
+//    gpio_init.GPIO_Mode = GPIO_Mode_AF;
+//    gpio_init.GPIO_OType = GPIO_OType_PP;
+//    gpio_init.GPIO_PuPd = GPIO_PuPd_NOPULL;
+//    GPIO_Init(GPIOA, &gpio_init);
+//    
+//    GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_USART2);
+//    GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_USART2);
+//    
+//    // Initialize USART.
+//    USART_InitTypeDef usart_init;
+//    usart_init.USART_BaudRate = 9600;
+//    usart_init.USART_WordLength = USART_WordLength_8b;
+//    usart_init.USART_StopBits = USART_StopBits_1;
+//    usart_init.USART_Parity = USART_Parity_No;
+//    usart_init.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+//    usart_init.USART_Mode = USART_Mode_Tx | USART_Mode_Rx;
+//    USART_Init(USART2, &usart_init);
+//    
+//    USART_Cmd(USART2, ENABLE);
+//}
+
+
 void DebugPort::Init() {
-    RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
-    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_UART5, ENABLE);
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
     
     // Initialize TX and RX pins.
     GPIO_InitTypeDef gpio_init;
-    gpio_init.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
+    gpio_init.GPIO_Pin = GPIO_Pin_12;
     gpio_init.GPIO_Speed = GPIO_Speed_50MHz;
     gpio_init.GPIO_Mode = GPIO_Mode_AF;
     gpio_init.GPIO_OType = GPIO_OType_PP;
     gpio_init.GPIO_PuPd = GPIO_PuPd_NOPULL;
-    GPIO_Init(GPIOA, &gpio_init);
+    GPIO_Init(GPIOC, &gpio_init);
+
+    gpio_init.GPIO_Pin = GPIO_Pin_2;
+    gpio_init.GPIO_Speed = GPIO_Speed_50MHz;
+    gpio_init.GPIO_Mode = GPIO_Mode_AF;
+    gpio_init.GPIO_OType = GPIO_OType_PP;
+    gpio_init.GPIO_PuPd = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIOD, &gpio_init);
     
-    GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_USART2);
-    GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_USART2);
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource12, GPIO_AF_UART5);
+    GPIO_PinAFConfig(GPIOD, GPIO_PinSource2, GPIO_AF_UART5);
     
     // Initialize USART.
     USART_InitTypeDef usart_init;
@@ -85,10 +123,11 @@ void DebugPort::Init() {
     usart_init.USART_Parity = USART_Parity_No;
     usart_init.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
     usart_init.USART_Mode = USART_Mode_Tx | USART_Mode_Rx;
-    USART_Init(USART2, &usart_init);
+    USART_Init(UART5, &usart_init);
     
-    USART_Cmd(USART2, ENABLE);
+    USART_Cmd(UART5, ENABLE);
 }
+
 
 
 }  // namespace serial
