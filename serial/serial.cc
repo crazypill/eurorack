@@ -70,34 +70,25 @@ void PendSV_Handler() { }
 extern "C" {
 
 void SysTick_Handler() {
-  ui.Poll();
-
-    uint8_t byte = 'a';
-    debug_port.Write( byte++ );
-    if( byte > 'z' )
-        byte = 'a';
-    if( debug_port.writable() )
-        debug_port.Write( byte );
-
-    
-  if (settings.freshly_baked()) {
-    if (debug_port.readable()) {
-      uint8_t command = debug_port.Read();
-      uint8_t response = ui.HandleFactoryTestingRequest(command);
-      debug_port.Write(response);
+    ui.Poll();
+    if (settings.freshly_baked()) {
+        if (debug_port.readable()) {
+            uint8_t command = debug_port.Read();
+            uint8_t response = ui.HandleFactoryTestingRequest(command);
+            debug_port.Write(response);
+        }
     }
-  }
 }
 
-}
+
 
 void FillBuffer(Codec::Frame* input, Codec::Frame* output, size_t n) {
 #ifdef PROFILE_INTERRUPT
   TIC
 #endif  // PROFILE_INTERRUPT
-//  cv_scaler.Read(processor.mutable_parameters());
-//  processor.Process((ShortFrame*)input, (ShortFrame*)output, n);
-//  meter.Process(processor.parameters().freeze ? output : input, n);
+  cv_scaler.Read(processor.mutable_parameters());
+  processor.Process((ShortFrame*)input, (ShortFrame*)output, n);
+  meter.Process(processor.parameters().freeze ? output : input, n);
 #ifdef PROFILE_INTERRUPT
   TOC
 #endif  // PROFILE_INTERRUPT
@@ -112,12 +103,12 @@ void Init()
     version.Init();
     
     // Init granular processor.
-//    processor.Init(
-//                   block_mem, sizeof(block_mem),
-//                   block_ccm, sizeof(block_ccm));
-//
-//    settings.Init();
-//    cv_scaler.Init(settings.mutable_calibration_data());
+    processor.Init(
+                   block_mem, sizeof(block_mem),
+                   block_ccm, sizeof(block_ccm));
+
+    settings.Init();
+    cv_scaler.Init(settings.mutable_calibration_data());
     meter.Init(32000);
     ui.Init(&settings, &cv_scaler, &processor, &meter);
     
@@ -133,33 +124,42 @@ void Init()
     sys.StartTimers();
 }
 
+uint8_t ReadByte( void )
+{
+    while( !debug_port.readable() )
+        ;
+    
+    return debug_port.Read();
+}
+
+
+void WriteByte( uint8_t byte )
+{
+    while( !debug_port.writable() )
+        ;
+    
+    debug_port.Write( byte );
+}
+
 
 void DebugHello(void)
 {
-
-    
+    uint8_t byte = 'a';
     while( 1 )
     {
-        uint8_t byte = 'a';
-        debug_port.Write( byte++ );
+//        byte = ReadByte();
+        WriteByte( byte++ );
+
         if( byte > 'z' )
             byte = 'a';
-        
-        if( debug_port.writable() )
-            debug_port.Write( byte );
-        
-//        if(  debug_port.readable() )
-//        {
-//            uint8_t byte = debug_port.Read();
-//            debug_port.Write( byte );
-//        }
     }
 }
 
 
 int main(void) {
-  Init();
+//  Init();
     
+  debug_port.Init();
   DebugHello();
 
   while (1) {
@@ -169,3 +169,4 @@ int main(void) {
 }
 
 
+} // extern "C"
